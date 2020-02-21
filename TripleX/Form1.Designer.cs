@@ -37,11 +37,19 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.choosePlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.creatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(65, 37);
+            this.button1.Location = new System.Drawing.Point(66, 63);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 100);
             this.button1.TabIndex = 0;
@@ -50,7 +58,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(171, 37);
+            this.button2.Location = new System.Drawing.Point(172, 63);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 100);
             this.button2.TabIndex = 0;
@@ -59,7 +67,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(277, 37);
+            this.button3.Location = new System.Drawing.Point(278, 63);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 100);
             this.button3.TabIndex = 0;
@@ -68,7 +76,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(65, 143);
+            this.button4.Location = new System.Drawing.Point(66, 169);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 100);
             this.button4.TabIndex = 0;
@@ -77,7 +85,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(171, 143);
+            this.button5.Location = new System.Drawing.Point(172, 169);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 100);
             this.button5.TabIndex = 0;
@@ -86,7 +94,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(277, 143);
+            this.button6.Location = new System.Drawing.Point(278, 169);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 100);
             this.button6.TabIndex = 0;
@@ -95,7 +103,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(65, 249);
+            this.button7.Location = new System.Drawing.Point(66, 275);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 100);
             this.button7.TabIndex = 0;
@@ -104,7 +112,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(171, 249);
+            this.button8.Location = new System.Drawing.Point(172, 275);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 100);
             this.button8.TabIndex = 0;
@@ -113,12 +121,69 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(277, 249);
+            this.button9.Location = new System.Drawing.Point(278, 275);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(100, 100);
             this.button9.TabIndex = 0;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.Button_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gameToolStripMenuItem,
+            this.creatorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(449, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // gameToolStripMenuItem
+            // 
+            this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.choosePlayerToolStripMenuItem,
+            this.restartToolStripMenuItem});
+            this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.gameToolStripMenuItem.Text = "Game";
+            // 
+            // choosePlayerToolStripMenuItem
+            // 
+            this.choosePlayerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xToolStripMenuItem,
+            this.oToolStripMenuItem});
+            this.choosePlayerToolStripMenuItem.Name = "choosePlayerToolStripMenuItem";
+            this.choosePlayerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.choosePlayerToolStripMenuItem.Text = "Choose Player";
+            // 
+            // xToolStripMenuItem
+            // 
+            this.xToolStripMenuItem.Name = "xToolStripMenuItem";
+            this.xToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xToolStripMenuItem.Text = "X";
+            this.xToolStripMenuItem.Click += new System.EventHandler(this.xToolStripMenuItem_Click);
+            // 
+            // oToolStripMenuItem
+            // 
+            this.oToolStripMenuItem.Name = "oToolStripMenuItem";
+            this.oToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.oToolStripMenuItem.Text = "O";
+            this.oToolStripMenuItem.Click += new System.EventHandler(this.oToolStripMenuItem_Click);
+            // 
+            // restartToolStripMenuItem
+            // 
+            this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartToolStripMenuItem.Text = "Restart";
+            this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
+            // 
+            // creatorToolStripMenuItem
+            // 
+            this.creatorToolStripMenuItem.Name = "creatorToolStripMenuItem";
+            this.creatorToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.creatorToolStripMenuItem.Text = "Creator";
+            this.creatorToolStripMenuItem.Click += new System.EventHandler(this.creatorToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -134,9 +199,14 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -151,6 +221,13 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem gameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem choosePlayerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restartToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem creatorToolStripMenuItem;
     }
 }
 
