@@ -31,6 +31,47 @@ namespace TripleX
             }
             xTurn = !xTurn;
             senderB.Enabled = false;
+
+            CheckWin(senderB);
+        }
+
+        void CheckWin( Button pressedButton)
+        {
+            if (button1.Text == button2.Text && button2.Text == button3.Text && button2.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text +" !");
+            }
+            if (button4.Text == button5.Text && button5.Text == button6.Text && button5.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+            if (button7.Text == button8.Text && button8.Text == button9.Text && button8.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+
+
+            if (button1.Text == button4.Text && button4.Text == button7.Text && button4.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+            if (button2.Text == button5.Text && button5.Text == button8.Text && button5.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+            if (button3.Text == button6.Text && button6.Text == button9.Text && button6.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+
+            if (button1.Text == button5.Text && button5.Text == button9.Text && button5.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
+            if (button3.Text == button5.Text && button5.Text == button6.Text && button5.Enabled == false)
+            {
+                MessageBox.Show("Победили " + pressedButton.Text + " !");
+            }
         }
     }
 }
